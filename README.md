@@ -12,13 +12,21 @@ Check out a cart, creating an order with associated items.
 
 # Installation
 #### 1. Clone the Repository:
-```git clone <repository-url>```
+`git clone <repository-url>`
 `cd Ecommerce`
 #### 2.Set Up a Virtual Environment:
 `python -m venv venv`
-`source venv/bin/activate`  # On Windows, use venv\Scripts\activate
+use venv\Scripts\activate
 #### 3.Install Dependencies:
 `pip install -r requirements.txt`
+#### 4.Run Migrations:
+`python manage.py makemigrations`
+python manage.py migrate`
+#### 5.Load Initial Data (Optional):
+`python manage.py loaddata api/fixtures/initial_data.json`
+#### 6.Run the Development Server:
+`python manage.py runserver`
+
 
 
 
