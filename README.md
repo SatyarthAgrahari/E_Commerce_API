@@ -20,7 +20,7 @@ use venv\Scripts\activate
 `pip install -r requirements.txt`
 #### 4.Run Migrations:
 `python manage.py makemigrations`
-python manage.py migrate`
+`python manage.py migrate`
 #### 5.Load Initial Data (Optional):
 `python manage.py loaddata api/fixtures/initial_data.json`
 #### 6.Run the Development Server:
