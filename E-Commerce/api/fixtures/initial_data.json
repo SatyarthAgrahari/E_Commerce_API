@@ -1,0 +1,195 @@
+[
+    {
+        "model": "api.category",
+        "pk": 1,
+        "fields": {
+            "name": "Electronics",
+            "description": "Electronic items and gadgets."
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 1,
+        "fields": {
+            "name": "Smartphone",
+            "description": "Latest 5G smartphone with high-resolution camera.",
+            "price": "699.99",
+            "category": 1,
+            "image": "products/smartphone.jpg"
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 2,
+        "fields": {
+            "name": "TV",
+            "description": "4K Ultra HD Smart TV with HDR.",
+            "price": "999.99",
+            "category": 1,
+            "image": "products/tv.jpeg"
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 3,
+        "fields": {
+            "name": "Laptop",
+            "description": "15-inch laptop with powerful performance.",
+            "price": "1299.99",
+            "category": 1,
+            "image": "products/laptop.jpg"
+        }
+    },
+    {
+        "model": "api.category",
+        "pk": 2,
+        "fields": {
+            "name": "Clothing",
+            "description": "Apparel and fashion items."
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 4,
+        "fields": {
+            "name": "T-Shirt",
+            "description": "Cotton T-Shirt with graphic print.",
+            "price": "19.99",
+            "category": 2,
+            "image": "products/tshirt.jpeg"
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 5,
+        "fields": {
+            "name": "Jeans",
+            "description": "Blue denim jeans.",
+            "price": "49.99",
+            "category": 2,
+            "image": "products/jeans.jpg"
+        }
+    },
+    {
+        "model": "api.product",
+        "pk": 6,
+        "fields": {
+            "name": "Jacket",
+            "description": "Warm winter jacket.",
+            "price": "89.99",
+            "category": 2,
+            "image": "products/jacket.jpeg"
+        }
+    },
+    {
+        "model": "api.cart",
+        "pk": 1,
+        "fields": {
+            "user": 1  
+        }
+    },
+    {
+        "model": "api.cart",
+        "pk": 2,
+        "fields": {
+            "user": 2  
+        }
+    },
+    {
+        "model": "api.cartitem",
+        "pk": 1,
+        "fields": {
+            "product": 1,  
+            "cart": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "api.cartitem",
+        "pk": 2,
+        "fields": {
+            "product": 2,  
+            "cart": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "api.cartitem",
+        "pk": 3,
+        "fields": {
+            "product": 3,  
+            "cart": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "api.cartitem",
+        "pk": 4,
+        "fields": {
+            "product": 4,  
+            "cart": 2,
+            "quantity": 2
+        }
+    },
+    {
+        "model": "api.cartitem",
+        "pk": 5,
+        "fields": {
+            "product": 5,  
+            "cart": 2,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "api.cartitem",
+        "pk": 6,
+        "fields": {
+            "product": 6,  
+            "cart": 2,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "api.order",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "is_checked_out": false
+        }
+    },
+    {
+        "model": "api.order",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "is_checked_out": false
+        }
+    },
+    {
+        "model": "api.orderitem",
+        "pk": 1,
+        "fields": {
+            "product": 1,  
+            "order": 1,
+            "quantity": 1
+        }
+    },
+    {
+        "model": "api.orderitem",
+        "pk": 2,
+        "fields": {
+            "product": 4,  
+            "order": 2,
+            "quantity": 2
+        }
+    },
+    {
+        "model": "api.orderitem",
+        "pk": 3,
+        "fields": {
+            "product": 5,  
+            "order": 2,
+            "quantity": 1
+        }
+    }
+]
