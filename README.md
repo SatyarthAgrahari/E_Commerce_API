@@ -25,7 +25,10 @@ use venv\Scripts\activate
 `python manage.py loaddata api/fixtures/initial_data.json`
 #### 6.Run the Development Server:
 `python manage.py runserver`
-
+## API Endpoints:
+* **/api/products/:** List all products.
+* **/api/cart/:** Get the user's cart details.
+* **/api/orders/:** View and manage user's orders.
 
 
 
