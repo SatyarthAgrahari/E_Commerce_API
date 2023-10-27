@@ -26,9 +26,10 @@ use venv\Scripts\activate
 #### 6.Run the Development Server:
 `python manage.py runserver`
 ## API Endpoints:
+* **/api/categories/:** List Category
 * **/api/products/:** List all products.
-* **/api/cart/:** Get the user's cart details.
-* **/api/orders/:** View and manage user's orders.
+* **/api/cartitem/:** Get the user's cart details.
+* **/api/orderitem/:** View and manage user's orders.
 
 
 
